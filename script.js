@@ -1,4 +1,4 @@
-const apiKey = "a53eb5438cf2463c9c105dcaf26b5f2d"; // ✅ Your key
+const apiKey = "a53eb5438cf2463c9c105dcaf26b5f2d"; // ✅ Your API key
 
 async function getTime() {
   const timezone = document.getElementById("timezone").value;
@@ -21,6 +21,6 @@ async function getTime() {
       <p><a href="https://www.google.com/maps/search/${timezone}" target="_blank">📍 View on Google Maps</a></p>
     `;
   } catch (error) {
-    result.innerHTML = `<p style="color:red;">❌ Could not fetch time data.</p>`;
+    result.innerHTML = `<p style="color:red;">❌ Could not fetch time data. Check API or timezone name.</p>`;
   }
 }
