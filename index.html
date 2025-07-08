@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🌍 World Clock App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🕒 World Clock App</h1>
-    <input type="text" id="locationInput" placeholder="Enter country or city..." />
-    <button onclick="getTimeData()">Get Time</button>
+    <h1>🕒 World Clock</h1>
 
-    <div id="result">
-      <h2 id="place"></h2>
-      <p id="datetime"></p>
-      <p id="timezone"></p>
-    </div>
+    <select id="timezone">
+      <option value="">-- Select Timezone --</option>
+      <option value="Asia/Kolkata">Asia/Kolkata</option>
+      <option value="Europe/London">Europe/London</option>
+      <option value="America/New_York">America/New_York</option>
+      <option value="Asia/Tokyo">Asia/Tokyo</option>
+      <option value="Australia/Sydney">Australia/Sydney</option>
+    </select>
+
+    <button onclick="getTime()">Get Time</button>
+
+    <div id="result"></div>
   </div>
 
   <script src="script.js"></script>
